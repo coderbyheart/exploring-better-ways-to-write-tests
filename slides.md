@@ -197,6 +197,8 @@ Note: This is intentionally **NOT** following
 [the Gherkin recommendation](https://cucumber.io/docs/bdd/better-gherkin/)
 (because client is a machine)
 
+Note 2: we don't have business people writing the scenarios.
+
 # Improve Gherkin: BDD Markdown
 
 <https://github.com/NordicSemiconductor/bdd-markdown-js>
