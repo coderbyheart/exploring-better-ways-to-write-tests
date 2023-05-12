@@ -1,0 +1,36 @@
+{
+  "name": "@coderbyheart/exploring-better-ways-to-write-tests",
+  "version": "0.0.0-development",
+  "description": "Slides for my talk about Exploring better ways to write tests",
+  "scripts": {
+    "start": "npx live-server --port=8000 --no-browser ./public",
+    "watch": "./.devcontainer/wa make build",
+    "postinstall": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderbyheart/exploring-better-ways-to-write-tests.git"
+  },
+  "keywords": [
+    "Firmware Development",
+    "Testing",
+    "GitHub Actions",
+    "Docker"
+  ],
+  "author": "Markus Tacker <Markus.Tacker@NordicSemi.no>",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/coderbyheart/exploring-better-ways-to-write-tests/issues"
+  },
+  "homepage": "https://github.com/coderbyheart/exploring-better-ways-to-write-tests#readme",
+  "devDependencies": {
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "12.0.32",
+    "live-server": "1.2.2",
+    "prettier": "2.8.8"
+  },
+  "lint-staged": {
+    "*.{yml,md,js,json}": [
+      "prettier --write --config .prettierrc.js"
+    ]
+  }
+}
