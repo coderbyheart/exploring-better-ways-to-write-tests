@@ -250,9 +250,17 @@ Generate architecture diagrams
 
 ![Idea](./idea.jpg)
 
-# Visualize data flows
+# Interactive Architecture Diagram
 
-- We need to put the flow of events first
+We need to put the flow of events first
+
+- Show all the Features, filter by feature -> show only the components and
+  events used
+- Show all the components, filter by component -> which features use this
+  component?
+  - Which features have a lot of overlap in component usage
+- Inventory of all events -> filter events that include e.g. an email, which
+  components are used?
 
 # Thank you
 
