@@ -274,8 +274,4 @@ Please share your feedback!
 <small>Latest version:  
 [`bit.ly/better-test-tools`](https://bit.ly/better-test-tools)</small>
 
-We are hiring!  
-[nordicsemi.com/jobs](https://nordicsemi.com/jobs)  
-<small>Trondheim &middot; Oslo &middot; 20+ more locations</small>
-
 </div>
