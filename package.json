@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/coderbyheart/exploring-better-ways-to-write-tests#readme",
   "devDependencies": {
-    "@nordicsemiconductor/asset-tracker-cloud-code-style": "12.0.32",
+    "@nordicsemiconductor/asset-tracker-cloud-code-style": "12.0.39",
     "live-server": "1.2.2",
     "prettier": "2.8.8"
   },
