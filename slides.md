@@ -150,6 +150,10 @@ Trondheim, Norway
 
 ::::::::::::::
 
+# Slides
+
+![QR Code to Slides](./qrcode.png){width=50%}
+
 # Preface
 
 I need to do
