@@ -1,5 +1,5 @@
 ---
-title: Exploring better ways to write tests
+title: Exploring better ways to write tests (enhanced edition)
 theme: white
 slideNumber: true
 header-includes: |
@@ -81,7 +81,7 @@ header-includes: |
       font-size: 60px;
     }
     #title-slide h1:after {
-      content: "Nordic Testing Days | Tallinn";
+      content: "Trondheim Developer Conference";
       display: block;
       color: #222;
       padding: 1rem;
@@ -90,7 +90,7 @@ header-includes: |
       font-size: 32px;
     }
     #title-slide:after {
-      content: "June 2023";
+      content: "October 2023";
       font-size: 22px;
       color: #191919;
       font-style: italic;
@@ -138,13 +138,13 @@ header-includes: |
 
 ::: {.column width=48%}
 
+<small>Pronouns: he/him</small>
+
 Principal R&D Engineer  
 Nordic Semiconductor  
 Trondheim, Norway
 
 [coderbyheart.com/socials](https://coderbyheart.com/socials)
-
-<small>Pronouns: he/him</small>
 
 :::
 
@@ -299,7 +299,7 @@ Feature: nRF Cloud Cell Geolocation
 - Formatted code
 - Context
 - Asynchronous results
-- Retries
+- ~~Retries~~
 
 [Supported syntax](https://raw.githubusercontent.com/NordicSemiconductor/bdd-markdown-js/saga/parser/test-data/feature/Example.feature.md)
 
@@ -385,7 +385,13 @@ Soon the current position should be `${x},${y}`
 
 </div>
 
-# Retries
+# ~~Retries~~
+
+_Update!_
+
+⚠ This turned out to be a bad idea!
+
+🤯 Instead, each step implementation decides on retry behaviour.
 
 ```markdown
 ---
