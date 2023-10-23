@@ -1,5 +1,5 @@
 ---
-title: Exploring better ways to write tests (enhanced edition)
+title: Exploring better ways to write tests (updated edition)
 theme: white
 slideNumber: true
 header-includes: |
@@ -154,6 +154,8 @@ Trondheim, Norway
 
 ![QR Code to Slides](./qrcode.png){width=50%}
 
+<div style='text-align: center'>`bit.ly/better-test-tools`</div>
+
 # Preface
 
 I need to do
@@ -235,10 +237,10 @@ Examples used:
     Then the tracker publishes this message to the topic {tracker:id}/messages
       """
       {
-      "impact": {
-      "v": {magnitude},
-      "ts": {ts}
-      }
+        "impact": {
+          "v": {magnitude},
+          "ts": {ts}
+        }
       }
       """
 ```
@@ -253,7 +255,9 @@ Examples used:
       """
       SELECT measure_value::double AS value
       FROM "{historicaldataDatabaseName}"."{historicaldataTableName}"
-      WHERE deviceId='{tracker:id}' AND measure_name='impact' AND measure_value::double IS NOT NULL
+      WHERE deviceId='{tracker:id}'
+        AND measure_name='impact'
+        AND measure_value::double IS NOT NULL
       ORDER BY time DESC
       """
     Then "timestreamQueryResult" should match this JSON
@@ -387,11 +391,9 @@ Soon the current position should be `${x},${y}`
 
 # ~~Retries~~
 
-_Update!_
+⚠ _Update!_ This turned out to be a bad idea!
 
-⚠ This turned out to be a bad idea!
-
-🤯 Instead, each step implementation decides on retry behaviour.
+🤯 Instead, let steps decide on retry behaviour.
 
 ```markdown
 ---
